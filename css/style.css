@@ -1,0 +1,188 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+/*-------------------------------*/
+/*--------------navegador_menu-----------------*/
+header{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+
+    background-color: red;
+}
+header h2 {
+    text-align: center;
+    padding-top: 1%;
+}
+header nav{
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: .5rem 1.5rem;
+}
+header nav a{
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    padding: 10px 7px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media(min-width:831px){
+        header nav a{
+            font-size: 1.5rem;
+        }
+}
+    @media(max-width:830px){
+        header nav{
+            height: 80px;
+        }
+        header nav a{
+            font-size: 20px;
+            display: grid;
+            align-items: center;
+        }
+        header nav a i{
+            font-size: 35px;
+            text-align: center;
+            margin-bottom: 2px;
+        }
+    }
+
+/*--------------Main-----------------*/
+
+/*comboDia*/
+
+.comboDia h2{
+    padding: 15px 0 15px 20px;
+}
+.aBotton{
+    padding: 10px 15px;
+    border: 4px solid black;
+    border-radius: 10px;
+    font-size: 1.2rem;
+
+    width:max-content;
+    display:block;
+    text-align: center;
+    font-weight: 700;
+
+    
+    margin: 20px auto 0;
+    text-decoration: none;
+    color: black;
+}
+/*carrusel*/
+.carrusel{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+}
+.elemento{
+    flex: 1 0 auto;
+    margin: 0 15px;
+    width: 200px;
+    height: 200px;
+    border: solid 2px red;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.elemento  img{
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.elemento p{
+    /*sombra*/
+    background-image: linear-gradient(to top, rgb(78, 78, 78),transparent);
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+    position: absolute;
+}
+.elemento h3{
+    position: absolute;
+    bottom:0.5rem;
+    left: 0.2rem;
+    width: 100%;
+    color: black;
+}
+.fracDia h1{
+    margin-left: 15px;
+}
+.sect1 h2, .sect2 h2, .sect3 h2{
+    margin-left: 15px;
+}
+/**menu**/
+@media(min-width:831px){
+    .comboDia{
+        background-color: yellow;
+        height: 350px;
+    }
+}
+@media(max-width:830px){
+    .comboDia{
+        background-color: yellow;
+        height: 350px;
+    }
+}
+    @media(max-width:769px){
+
+        .comboDia{
+            background-color: yellow;
+            height: 350px;
+        }
+
+        .fracDia{
+            height: 80px;
+        }
+        .sect1{
+            height: 250px;
+        }
+        .sect2{
+            height: 250px;
+        }
+        .sect3{
+            height: 250px;
+        }
+    }
+        @media(max-width:420px){
+            .elemento{
+                width: 150px;
+                height: 150px;
+            }
+            .fracDia h1{
+                font-size: 1.6rem;
+            }
+        }
+
+/*--------------Footer-----------------*/
+
+@media(min-width:769px){
+    .pie{
+        text-align: center;
+    }
+}
+    @media(max-width:769px){
+        footer{
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            position: flex;
+            bottom: 0;
+        }
+        .pie{
+            font-size: 1.3rem;
+        }
+    }

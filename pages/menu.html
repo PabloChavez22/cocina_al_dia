@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale="1", maximum-scale="1">
+        <title>Cocina al Dia-Menu</title>
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="stylesheet" type="text/css" href="../css/buscador.css">
+        <link rel="stylesheet" type="text/css" href="../css/menu.css">
+        <link rel="stylesheet" type="text/css" href="../css/estilosfontcolor.css">
+
+        <script src="https://kit.fontawesome.com/8fa71a03bd.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div>
+                <h2>Cocina al Dia</h2>
+            </div>
+            
+            <nav>
+                    <a href="../index.html"><i class="fa-solid fa-house"></i>Inicio</a>
+                    <a href="../pages/combo.html"><i class="fa-solid fa-clipboard"></i>Combo</a>
+                    <a href="#"><i class="fa-solid fa-book-open"></i>Menu</a>
+                    <a href="#" class="search-toggle"><i class="fa-solid fa-magnifying-glass"></i>Buscar</a>
+            </nav>
+        </header>
+        <main>
+            <div class="modobusqueda">
+                <input type="text" id="buscador" name="buscador" placeholder="Que desea comer..." list="complete">
+                <datalist id="complete">
+                    <option value="hamburguesa"></option>
+                    <option value="pizza"></option>
+                </datalist>
+            </div>
+            <!--grid-->
+            <ul class="cuadro" id="listaPlatos">
+                <li class="hijoMenu">
+                    <a href="../pages/choise/choise.html">
+                        <img src="../resourses/media/sandwiches/hamburguesa/hamburguesa-pepino.webp" alt="hamb.simple">
+                        <div class="description">
+                            <h3 class="producto">Hamburguesa simple</h3>
+                            <p>hamburguesa con pepino</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="hijoMenu">
+                    <a href="../pages/choise/hambDoble.html">
+                        <img src="../resourses/media/sandwiches/hamburguesa/hamburguesa-doble.jpeg" alt="hamb.doble">
+                        <div class="description">
+                            <h3 class="producto">Hamburguesa doble</h3>
+                            <p>Mucho chedar</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="hijoMenu">
+                    <a href="../pages/choise/hambVegana.html">    
+                        <img src="../resourses/media/sandwiches/hamburguesa/hamburguesa-vegana.jpg" alt="hamb.triple">
+                        <div class="description">
+                            <h3 class="producto">Hamburguesa vegana</h3>
+                            <p>Con vegetales...</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="hijoMenu">
+                    <a href="../pages/choise/pizzaSimple.html">
+                        <img src="../resourses/media/pizza/pizza-simple.jpg" alt="pizza simple">
+                        <div class="description">
+                            <h3 class="producto">Pizza simple</h3>
+                            <p>tuco y queso</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="hijoMenu">
+                    <a href="#">
+                        <img src="../resourses/media/pizza/pizza-muzaypina.jpg" alt="pizza muza y pina">
+                        <div class="description">
+                            <h3 class="producto">Pizza hawaiiana</h3>
+                            <p>muza y piña</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="hijoMenu">
+                    <a href="#">
+                        <img src="../resourses/media/pizza/pizza-cesar-pollo-anchoas-lechuga.webp" alt="pizza muza y pina">
+                        <div class="description">
+                            <h3 class="producto">Pizza caesar</h3>
+                            <p>Con anchoas, pollo...</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </main>
+        <footer>
+            <div class="pie">
+                <small>2023&copy;<b>Cocina al Dia</b></small>
+            </div>
+        </footer>
+        <script src="../javascript/clicksearch.js"></script>
+    </body>
+</html>

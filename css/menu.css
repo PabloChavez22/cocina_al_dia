@@ -1,0 +1,62 @@
+
+/**buscador**/
+#buscador{
+    font-size: 1.2rem;
+}
+
+/****/
+.cuadro{
+    /*width: 100%;
+    height: auto;*/
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+.hijoMenu{
+    border: solid black;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.hijoMenu a{
+    text-decoration: none;
+    color: black;
+}
+.hijoDisplay{
+    display: none;
+}
+
+.hijoMenu img{
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    border: solid 1px green;
+}
+.description{
+    background-image: linear-gradient(to top, rgb(78, 78, 78),transparent);
+    width:100%;
+    height: 60px;
+    position: absolute;
+    top: 80%;
+}
+.description h3,p{
+    padding-left: 10px;
+}
+
+    @media(max-width:420px){
+        .hijoMenu{
+            height: 250px;
+        }
+        .description h3{
+            font-size: 1rem;
+        }
+        .description p{
+            font-size: .9rem;
+        }
+    }
