@@ -80,15 +80,19 @@
         padding-top: 135px;
     }
 }
-@media(max-device-width:770px){
-    .choise-select{
-        grid-template-rows: 1fr 1fr;
+    @media(max-device-width:770px){
+        .choise-select{
+            grid-template-rows: 1fr 1fr;
+        }
+        footer{
+            margin: auto;
+            justify-content: center;
+            width: 100%;
+            position:absolute;
+            bottom: 0;
+        }
     }
-    footer{
-        margin: auto;
-        justify-content: center;
-        width: 100%;
-        position:absolute;
-        bottom: 0;
-    }
-}
+        @media (max-device-width:700px){
+            footer{
+                position:relative;
+            }
